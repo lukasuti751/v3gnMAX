@@ -338,3 +338,71 @@ TIPS = [
 
 MEAL_TYPE_LABELS = {1: "breakfast", 2: "lunch", 3: "dinner", 4: "snack"}
 
+HELP_TEXT = """
+v3gnMAX — AI healthy eating lifestyle companion CLI (extended)
+=============================================================
+
+Commands:
+  lookup --meal <name>       Lookup meals by name (partial match).
+  lookup --path-tag <tag>    Lookup meals by path tag (e.g. balanced, plant-based).
+  lookup --type <1-4>       Lookup by meal type: 1=breakfast, 2=lunch, 3=dinner, 4=snack.
+  list-meals                List all meals (name, type, path_tag).
+  list-paths                List path tags (id, label, desc).
+  list-tips                 List healthy eating tips.
+  hash --text <string>      Compute keccak256 hash (0x + hex) for contract use.
+  hash-batch --meals "a,b"  Hash multiple meal descriptions; --tags "x,y" for path tags.
+  suggest <keyword>         Suggest meals matching keyword (name, path_tag, desc).
+  export-hashes --meal X --tag Y [--type 1] [--file out.json]
+                            Export mealHash, pathTag, mealType for logMeal().
+  random-meal [--type 1-4] [--path-tag TAG]  Pick a random meal (v3gnMAX).
+  weekly-plan [--days 7] [--seed N]          Generate a weekly meal plan (v3gnMAX).
+  playbook                  Print daily practice playbook (v3gnMAX).
+  kitchen-tips              Print kitchen flow tips (v3gnMAX).
+  reflection                Print a random mindful eating reflection (v3gnMAX).
+  version                   Print v3gnMAX version.
+  config                    Show app config (meal count, path count, etc.).
+  constants                 Show Veg3n contract constant reference.
+  stats                     Show meal/path/tip counts and breakdown by type and tag.
+  demo                      Run a short demo (lookup, hash examples).
+  interactive               Start REPL (lookup, list, hash, suggest, random-meal, reflection, quit).
+  help                      Show this help.
+
+Meal types (Veg3n contract):
+  1 = V3G_MEAL_BREAKFAST
+  2 = V3G_MEAL_LUNCH
+  3 = V3G_MEAL_DINNER
+  4 = V3G_MEAL_SNACK
+
+Path tags: balanced, plant-based, high-protein, low-sugar, meal-prep, mindful,
+  whole-foods, mediterranean, low-carb, high-fibre, breakfast-club, lunch-goals,
+  dinner-balance, snack-smart, flexitarian.
+
+Contract: Use export-hashes to get mealHash and pathTag (bytes32). Then call
+  contract.logMeal(mealHash, pathTag, mealType) with type 1-4.
+"""
+
+# Example log entries for reference (meal desc, path tag, type)
+EXAMPLE_LOGS = [
+    {"meal": "Oatmeal with berries and nuts", "tag": "balanced", "type": 1},
+    {"meal": "Scrambled eggs with spinach and toast", "tag": "high-protein", "type": 1},
+    {"meal": "Greek yogurt with honey and granola", "tag": "balanced", "type": 1},
+    {"meal": "Green smoothie (kale, banana, almond milk)", "tag": "plant-based", "type": 1},
+    {"meal": "Grilled chicken salad with quinoa", "tag": "high-protein", "type": 2},
+    {"meal": "Lentil soup with whole-grain bread", "tag": "plant-based", "type": 2},
+    {"meal": "Salmon with roasted vegetables and brown rice", "tag": "balanced", "type": 3},
+    {"meal": "Vegetable stir-fry with tofu", "tag": "plant-based", "type": 2},
+    {"meal": "Hummus and vegetable sticks", "tag": "whole-foods", "type": 4},
+    {"meal": "Apple with almond butter", "tag": "balanced", "type": 4},
+]
+
+# Extended reference: Veg3n contract methods (for copy-paste or docs)
+EXTENDED_REFERENCE = """
+Veg3n contract — view functions (read-only):
+  getCompanionDigest() -> totalMeals, totalPaths, totalTips, deployBlockNum, paused
+  getMeal(mealId) -> user, mealHash, pathTag, loggedAtBlock, mealType, active
+  pointsBalance(address) -> uint256
+  getMealIds() -> uint256[]
+  getPathIds() -> uint256[]
+  getConstants() -> bpsBase, maxMeals, maxPaths, maxTips, maxBatchMeals, pointsScale
+  getPath(pathId) -> pathTag, startBlock, endBlock, participantCount, exists
+  getPathParticipants(pathId) -> address[]
