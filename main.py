@@ -202,3 +202,71 @@ for i in range(100):
 USAGE_EXAMPLES = """
 # Hash a meal description for logMeal
 python v3gn_app.py hash --text "Oatmeal with berries"
+# Output: 0x...
+
+# Hash a path tag
+python v3gn_app.py hash --text "balanced"
+# Output: 0x...
+
+# Export hashes for logMeal(mealHash, pathTag, mealType)
+python v3gn_app.py export-hashes --meal "Oatmeal with berries" --tag "balanced" --type 1
+# Output: {"mealHash": "0x...", "pathTag": "0x...", "mealType": 1}
+
+# Export to file
+python v3gn_app.py export-hashes --meal "Salmon with vegetables" --tag "high-protein" --type 3 --file hashes.json
+
+# Lookup meals by name
+python v3gn_app.py lookup --meal "oatmeal"
+
+# Lookup by path tag
+python v3gn_app.py lookup --path-tag "plant-based"
+
+# Lookup by meal type (1=breakfast, 2=lunch, 3=dinner, 4=snack)
+python v3gn_app.py lookup --type 1
+
+# Suggest meals for a keyword
+python v3gn_app.py suggest breakfast
+
+# List all meals
+python v3gn_app.py list-meals
+
+# List path tags
+python v3gn_app.py list-paths
+
+# List tips
+python v3gn_app.py list-tips
+
+# Meals by type
+python v3gn_app.py meals-by-type --type 1
+
+# Meals by tag
+python v3gn_app.py meals-by-tag --tag balanced
+
+# Config and constants
+python v3gn_app.py config
+python v3gn_app.py constants
+
+# Stats
+python v3gn_app.py stats
+
+# Demo
+python v3gn_app.py demo
+
+# Interactive REPL
+python v3gn_app.py interactive
+
+# Help and reference
+python v3gn_app.py help
+python v3gn_app.py reference
+python v3gn_app.py examples
+"""
+
+# Contract ABI snippet for front-end integration (key functions only)
+CONTRACT_ABI_SNIPPET = [
+    '{"type":"function","name":"getCompanionDigest","inputs":[],"outputs":[{"name":"totalMeals","type":"uint256"},{"name":"totalPaths","type":"uint256"},{"name":"totalTips","type":"uint256"},{"name":"deployBlockNum","type":"uint256"},{"name":"paused","type":"bool"}]}',
+    '{"type":"function","name":"getMeal","inputs":[{"name":"mealId","type":"uint256"}],"outputs":[{"name":"user","type":"address"},{"name":"mealHash","type":"bytes32"},{"name":"pathTag","type":"bytes32"},{"name":"loggedAtBlock","type":"uint256"},{"name":"mealType","type":"uint8"},{"name":"active","type":"bool"}]}',
+    '{"type":"function","name":"pointsBalance","inputs":[{"name":"","type":"address"}],"outputs":[{"name":"","type":"uint256"}]}',
+    '{"type":"function","name":"logMeal","inputs":[{"name":"mealHash","type":"bytes32"},{"name":"pathTag","type":"bytes32"},{"name":"mealType","type":"uint8"}],"outputs":[{"name":"mealId","type":"uint256"}]}',
+    '{"type":"function","name":"getMealIds","inputs":[],"outputs":[{"name":"","type":"uint256[]"}]}',
+    '{"type":"function","name":"getPathIds","inputs":[],"outputs":[{"name":"","type":"uint256[]"}]}',
+    '{"type":"function","name":"getConstants","inputs":[],"outputs":[{"name":"bpsBase","type":"uint256"},{"name":"maxMeals","type":"uint256"},{"name":"maxPaths","type":"uint256"},{"name":"maxTips","type":"uint256"},{"name":"maxBatchMeals","type":"uint256"},{"name":"pointsScale","type":"uint256"}]}',
