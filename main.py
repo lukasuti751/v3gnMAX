@@ -610,3 +610,71 @@ HealthyPath4Life — daily practice ideas for v3gn users
 - Pack cut citrus or apples for portable snacks.
 - Keep a checklist of habits inside a cupboard door.
 - Revisit your goals every month in light of real life.
+- Aim for gentle consistency over perfect tracking.
+- Acknowledge that some days will be off-plan.
+- Return to one tiny anchor habit on tricky days.
+- Use v3gn to log the meals that feel best in your body.
+- Share anonymised patterns with your healthcare team if needed.
+- Let curiosity guide your logs instead of criticism.
+- Write one sentence about how a meal made you feel.
+- Use colours and textures to make plates more appealing.
+- Plate meals before tasting rather than snacking while cooking.
+- Close the kitchen at a set time if helpful for you.
+- Keep a favourite mug or bowl reserved for breakfast rituals.
+- Replace all-or-nothing thinking with flexible options.
+- Give yourself credit for every step toward nourishment.
+"""
+
+KITCHEN_FLOW_IDEAS = """
+HealthyPath4Life — kitchen flow and environment ideas
+
+- Keep your cutting board and favourite knife easily accessible.
+- Store everyday spices near the stove in a visible rack.
+- Dedicate one shelf in your fridge to ready-to-eat vegetables.
+- Keep whole grains like oats, rice and quinoa in labelled jars.
+- Place healthy snack options at the front of cupboards.
+- Move less supportive snacks to higher, less visible shelves.
+- Keep a small compost bin or bowl on the counter while chopping.
+- Prepare ingredients for multiple meals in a single session.
+- Chop extra onions and garlic and store them in airtight containers.
+- Batch roast root vegetables for use across different meals.
+- Group breakfast items together in one “morning zone”.
+- Group tea, coffee and mugs in a calm beverage station.
+- Place water glasses near the sink or filter.
+- Use clear containers so you can see vegetables and leftovers.
+- Label containers with the date and simple meal notes.
+- Keep a notepad or whiteboard on the fridge for quick ideas.
+- Store a basic set of measuring cups and spoons together.
+- Keep a clean towel or cloth handy while cooking.
+- Tidy surfaces briefly before starting to cook a meal.
+- Pre-read simple recipes before beginning to cook.
+- Lay out all ingredients before turning on the stove.
+- Clean while you cook to keep surfaces uncluttered.
+- Keep a small bowl for food scraps while chopping.
+- Group pantry items by function (baking, grains, snacks).
+- Rotate older ingredients to the front of shelves.
+- Dedicate a small box to quick-meal ingredients.
+- Keep canned beans, tomatoes and fish within reach.
+- Store oils and vinegars together in a stable place.
+- Use oven timers and phone reminders to prevent burning food.
+- Keep a spare set of kitchen scissors dedicated to food.
+- Arrange frequently used tools in the top drawer.
+- Choose a few versatile pans rather than many specialised ones.
+- Keep a strainer or colander near the sink.
+- Stack cutting boards vertically for easy access.
+- Place a fruit bowl in the centre of the table.
+- Set up a simple salad station with tongs and a large bowl.
+- Store sharp knives safely and have them sharpened periodically.
+- Keep a safe step stool if cupboards are high.
+- Make space for a comfortable chopping posture.
+- Adjust lighting if possible to make the kitchen inviting.
+- Open a window when cooking strong-smelling foods.
+- Keep a small speaker or playlist for relaxed cooking music.
+- Clear a small zone specifically for packing lunches.
+- Prepare reusable containers and lids before portioning leftovers.
+- Assign a shelf in the freezer for prepared meals.
+- Pre-portion snacks into individual containers at the start of the week.
+- Store spices you rarely use separately from core seasonings.
+- Keep hot pads or oven mitts easy to grab.
+- Wrap herbs in slightly damp towels to prolong freshness.
+- Freeze washed and trimmed greens if they begin to wilt.
