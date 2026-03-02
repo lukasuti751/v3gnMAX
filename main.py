@@ -134,3 +134,71 @@ MEALS = [
     {"name": "Buckwheat porridge", "meal_type": 1, "path_tag": "whole-foods", "desc": "Buckwheat"},
     {"name": "Smoked salmon and cream cheese", "meal_type": 1, "path_tag": "high-protein", "desc": "Salmon, cream cheese"},
     {"name": "Breakfast salad with egg", "meal_type": 1, "path_tag": "balanced", "desc": "Greens, egg"},
+    {"name": "Sweet potato hash", "meal_type": 1, "path_tag": "whole-foods", "desc": "Sweet potato"},
+    {"name": "Tofu scramble", "meal_type": 1, "path_tag": "plant-based", "desc": "Tofu"},
+    {"name": "Millet porridge with fruit", "meal_type": 1, "path_tag": "plant-based", "desc": "Millet, fruit"},
+    {"name": "Breakfast bowl (acai style)", "meal_type": 1, "path_tag": "plant-based", "desc": "Fruit, granola"},
+    {"name": "Egg and soldiers", "meal_type": 1, "path_tag": "balanced", "desc": "Egg, bread"},
+    {"name": "Congee with ginger", "meal_type": 1, "path_tag": "whole-foods", "desc": "Rice porridge, ginger"},
+    {"name": "Breakfast pizza (whole grain)", "meal_type": 1, "path_tag": "balanced", "desc": "Base, egg, veg"},
+    {"name": "Lox and bagel", "meal_type": 1, "path_tag": "high-protein", "desc": "Salmon, bagel"},
+    {"name": "Pumpkin oatmeal", "meal_type": 1, "path_tag": "plant-based", "desc": "Oats, pumpkin"},
+    {"name": "Breakfast quesadilla", "meal_type": 1, "path_tag": "high-protein", "desc": "Tortilla, cheese, egg"},
+    {"name": "Fruit salad with mint", "meal_type": 1, "path_tag": "plant-based", "desc": "Mixed fruit, mint"},
+    {"name": "Corn fritters with avocado", "meal_type": 1, "path_tag": "balanced", "desc": "Corn, avocado"},
+    {"name": "Baked oats with berries", "meal_type": 1, "path_tag": "meal-prep", "desc": "Oats, berries"},
+    {"name": "Breakfast sausage and eggs", "meal_type": 1, "path_tag": "high-protein", "desc": "Sausage, eggs"},
+    {"name": "Cream of wheat with honey", "meal_type": 1, "path_tag": "balanced", "desc": "Wheat, honey"},
+    {"name": "Breakfast sandwich (whole grain)", "meal_type": 1, "path_tag": "balanced", "desc": "Bread, egg, cheese"},
+    {"name": "Mango and coconut chia", "meal_type": 1, "path_tag": "plant-based", "desc": "Chia, mango, coconut"},
+]
+
+PATH_TAGS = [
+    {"id": "balanced", "label": "Balanced", "desc": "Mix of macros, three meals plus snacks"},
+    {"id": "plant-based", "label": "Plant-based", "desc": "Focus on plants"},
+    {"id": "high-protein", "label": "High protein", "desc": "Protein at each meal"},
+    {"id": "low-sugar", "label": "Low sugar", "desc": "Minimise added sugars"},
+    {"id": "meal-prep", "label": "Meal prep", "desc": "Prepared ahead"},
+    {"id": "mindful", "label": "Mindful", "desc": "Mindful eating focus"},
+    {"id": "whole-foods", "label": "Whole foods", "desc": "Minimally processed"},
+    {"id": "mediterranean", "label": "Mediterranean", "desc": "Mediterranean style"},
+    {"id": "low-carb", "label": "Low carb", "desc": "Lower carbohydrate"},
+    {"id": "high-fibre", "label": "High fibre", "desc": "High fibre focus"},
+    {"id": "breakfast-club", "label": "Breakfast club", "desc": "Morning meal focus"},
+    {"id": "lunch-goals", "label": "Lunch goals", "desc": "Midday meal focus"},
+    {"id": "dinner-balance", "label": "Dinner balance", "desc": "Evening meal focus"},
+    {"id": "snack-smart", "label": "Snack smart", "desc": "Healthy snacks"},
+    {"id": "flexitarian", "label": "Flexitarian", "desc": "Mostly plants, some animal"},
+]
+
+# Additional meal description strings for hashing (expand as needed)
+MEAL_DESCRIPTIONS = [
+    "Oatmeal with berries and nuts", "Scrambled eggs with spinach and toast", "Greek yogurt with honey and granola",
+    "Green smoothie kale banana almond milk", "Porridge with banana and cinnamon", "Avocado toast with eggs",
+    "Chia pudding with fruit", "Whole-grain cereal with milk and berries", "Omelette with vegetables and cheese",
+    "Pancakes with maple syrup and fruit", "Grilled chicken salad with quinoa", "Lentil soup with whole-grain bread",
+    "Salmon with roasted vegetables and brown rice", "Vegetable stir-fry with tofu", "Turkey and vegetable skewers",
+    "Bean chilli with brown rice", "Baked sweet potato with black beans", "Chickpea curry with basmati rice",
+    "Hummus and vegetable sticks", "Apple with almond butter", "Mixed nuts and dried fruit",
+    "Whole-grain wrap with turkey and avocado", "Edamame with sea salt", "Trail mix nuts seeds dark chocolate",
+    "Rice bowl with grilled vegetables", "Tuna salad with greens", "Vegetable soup with whole-grain roll",
+    "Grilled fish with lemon and herbs", "Pasta with tomato sauce and vegetables", "Stir-fried chicken with broccoli",
+    "Quinoa salad with feta and olives", "Buddha bowl grains legumes veg", "Overnight oats with berries",
+    "Egg muffins with spinach", "Fruit and nut bar", "Cottage cheese with pineapple", "Celery with peanut butter",
+    "Roasted vegetable medley", "Lean beef with green beans", "Mushroom risotto", "Cauliflower rice with chicken",
+    "Shakshuka with whole-grain bread", "Smoothie bowl with granola", "Breakfast burrito with beans",
+    "Muesli with milk and fruit", "Veggie wrap with hummus", "Minestrone soup", "Grilled vegetable sandwich",
+    "Salmon poke bowl", "Stuffed bell peppers", "Lamb curry with rice", "Vegetable lasagne", "Baked cod with herbs",
+    "Pork tenderloin with apples", "Vegetable curry with naan", "Beef and broccoli stir-fry", "Stuffed squash with quinoa",
+    "Greek salad with grilled chicken", "Rice and dal", "Popcorn with nutritional yeast", "Rice crackers with hummus",
+    "Banana with oats", "Cheese and grapes", "Veggie sticks with guacamole", "Hard-boiled eggs", "Protein shake",
+    "Dates with almond butter", "Yogurt parfait", "Seaweed snacks", "Olives and cheese", "Apple slices with cinnamon",
+    "Roasted chickpeas", "Cucumber with tzatziki", "Dark chocolate square", "Berry mix", "Kale chips", "Pumpkin seeds",
+]
+for i in range(100):
+    MEAL_DESCRIPTIONS.append(f"Custom meal description {i+1} for logging")
+
+# Usage examples (long reference)
+USAGE_EXAMPLES = """
+# Hash a meal description for logMeal
+python v3gn_app.py hash --text "Oatmeal with berries"
