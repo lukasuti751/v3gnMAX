@@ -406,3 +406,71 @@ Veg3n contract — view functions (read-only):
   getConstants() -> bpsBase, maxMeals, maxPaths, maxTips, maxBatchMeals, pointsScale
   getPath(pathId) -> pathTag, startBlock, endBlock, participantCount, exists
   getPathParticipants(pathId) -> address[]
+  getActivePathIds() -> uint256[]
+  getMealsPaginated(offset, limit) -> ids, users, mealHashes, activeFlags
+  getTipIds() -> uint256[]
+  getCompanionDomain() -> bytes32
+  getImmutables() -> coordinatorAddr, vaultAddr, keeperAddr
+  getLatestMealIds(maxCount) -> uint256[]
+  getMealCountByUser(user) -> uint256
+  getActiveMealCount() -> uint256
+  isPathActive(pathId) -> bool
+  getMealsByUserPaginated(user, offset, limit) -> uint256[]
+  getPointsForAddresses(addresses[]) -> uint256[]
+  getTotalPointsInCirculation() -> uint256
+  getDailyStreak(user) -> uint256
+  getLastLogBlock(user) -> uint256
+  getUserGoal(user) -> goalHash, targetValue, setAtBlock
+
+Veg3n contract — state-changing (require signer):
+  logMeal(mealHash, pathTag, mealType) -> mealId  // mealType 1-4
+  batchLogMeals(mealHashes[], pathTags[], mealTypes[]) -> mealIds[]
+  joinPath(pathId)
+  leavePath(pathId)
+  setGoal(goalHash, targetValue)
+  redeemPoints(amount, reasonHash)
+  removeMeal(mealId)  // user or reward keeper
+
+Path coordinator only:
+  createPath(pathTag, startBlock, endBlock) -> pathId
+  recordTip(tipHash) -> tipId
+  setPathTagLabel(pathTag, labelHash)
+
+Reward keeper only:
+  awardPoints(user, amount)
+  awardPointsForMeal(mealId)
+  batchAwardPoints(users[], amounts[])
+  recordDailySnapshot(user, dayBlock, mealCount, pointsEarned) -> snapshotId
+
+Owner only:
+  setCompanionPaused(paused)
+  setPointsPerMeal(newPoints)
+
+Errors (revert with custom error): V3G_ZeroAddress, V3G_InvalidMealId, V3G_MealNotFound,
+  V3G_InvalidMealHash, V3G_NotPathCoordinator, V3G_NotRewardKeeper, V3G_CompanionPaused,
+  V3G_ReentrantCall, V3G_ZeroAmount, V3G_InsufficientPoints, V3G_MaxMealsReached,
+  V3G_ArrayLengthMismatch, V3G_BatchTooLarge, V3G_ZeroBatchSize, V3G_PathNotFound,
+  V3G_PathNotActive, V3G_AlreadyOnPath, V3G_NotOnPath, V3G_MaxPathsReached,
+  V3G_InvalidBlockRange, V3G_InvalidMealType, V3G_TipNotFound, V3G_MaxTipsReached,
+  V3G_NotMealUser, V3G_MealAlreadyRemoved, V3G_InvalidLabelHash.
+"""
+
+HEALTHY_PRACTICE_PLAYBOOK = """
+HealthyPath4Life — daily practice ideas for v3gn users
+
+- Start the day by drinking a glass of water before coffee.
+- Take one deep breath before every bite at breakfast.
+- Check in with hunger and fullness on a simple 1-10 scale.
+- Plan one plant-forward meal before lunchtime.
+- Add a handful of vegetables to your usual breakfast.
+- Swap one sugary drink for water, tea or sparkling water.
+- Pack a balanced snack before leaving home.
+- Pre-log a meal idea into v3gn before you cook it.
+- Reflect briefly on yesterday’s meals without judgement.
+- Walk for five minutes after your largest meal.
+- Choose one food you want to add in, not just remove.
+- Eat one meal today away from screens.
+- Include at least one source of fibre in each meal.
+- Keep a bowl of fruit visible on the counter.
+- Carry a small reusable water bottle with you.
+- Try a new vegetable or fruit you rarely buy.
