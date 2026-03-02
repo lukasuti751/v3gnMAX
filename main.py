@@ -270,3 +270,71 @@ CONTRACT_ABI_SNIPPET = [
     '{"type":"function","name":"getMealIds","inputs":[],"outputs":[{"name":"","type":"uint256[]"}]}',
     '{"type":"function","name":"getPathIds","inputs":[],"outputs":[{"name":"","type":"uint256[]"}]}',
     '{"type":"function","name":"getConstants","inputs":[],"outputs":[{"name":"bpsBase","type":"uint256"},{"name":"maxMeals","type":"uint256"},{"name":"maxPaths","type":"uint256"},{"name":"maxTips","type":"uint256"},{"name":"maxBatchMeals","type":"uint256"},{"name":"pointsScale","type":"uint256"}]}',
+]
+
+# Meal type reference table (for docs)
+MEAL_TYPE_REFERENCE = """
+Meal type | Contract constant       | Label
+----------|-------------------------|--------
+    1     | V3G_MEAL_BREAKFAST      | breakfast
+    2     | V3G_MEAL_LUNCH          | lunch
+    3     | V3G_MEAL_DINNER         | dinner
+    4     | V3G_MEAL_SNACK          | snack
+
+Use --type 1, 2, 3 or 4 in export-hashes and when calling logMeal(mealHash, pathTag, mealType).
+"""
+
+# Path tag reference (ids for hashing)
+PATH_TAG_REFERENCE = """
+balanced | plant-based | high-protein | low-sugar | meal-prep | mindful
+whole-foods | mediterranean | low-carb | high-fibre | breakfast-club | lunch-goals
+dinner-balance | snack-smart | flexitarian
+"""
+
+# Additional meals for extended database (name, type, tag, desc)
+ADDITIONAL_MEALS = []
+for t in range(1, 5):
+    for tag in ["balanced", "plant-based", "high-protein"]:
+        for i in range(8):
+            ADDITIONAL_MEALS.append({
+                "name": f"Meal {tag} {MEAL_TYPE_LABELS[t]} {i+1}",
+                "meal_type": t,
+                "path_tag": tag,
+                "desc": f"Description for {tag} {MEAL_TYPE_LABELS[t]} {i+1}",
+            })
+
+TIPS = [
+    "Eat whole foods: vegetables, fruits, whole grains, legumes, lean proteins.",
+    "Stay hydrated. Drink water with meals.",
+    "Balance meals: combine protein, fibre and healthy fats.",
+    "Plan ahead. Meal prep helps on busy days.",
+    "Eat mindfully. Pay attention to hunger and fullness.",
+    "Limit highly processed foods and added sugars.",
+    "Use reasonable portions.",
+    "Keep consistent meal times when possible.",
+    "Eat a variety of colours and types of produce.",
+    "Good sleep and stress management support eating habits.",
+    "Include protein at breakfast for sustained energy.",
+    "Add vegetables to at least two meals per day.",
+    "Choose whole grains over refined when you can.",
+    "Snack on nuts, fruit or yogurt rather than processed options.",
+    "Cook at home more often to control ingredients and portions.",
+    "Use the path tag 'balanced' for mixed macros.",
+    "Log snacks as meal type 4 for a complete daily picture.",
+    "Join a path that matches your goal (e.g. plant-based, high-protein).",
+    "Start the day with fibre and protein (e.g. oats, eggs).",
+    "Limit sugary drinks; opt for water, tea or black coffee.",
+    "Eat slowly and stop when you feel comfortably full.",
+    "Prefer unsaturated fats (olive oil, nuts, avocado).",
+    "Include legumes (beans, lentils) for fibre and protein.",
+    "Vary your protein sources: fish, poultry, legumes, tofu.",
+    "Use herbs and spices instead of excess salt.",
+    "Plan weekly meals to reduce last-minute unhealthy choices.",
+    "Keep healthy snacks visible (fruit bowl, nuts).",
+    "Read labels to check added sugar and sodium.",
+    "Eat with others when possible for social and mindful eating.",
+    "Stay active; physical activity supports appetite regulation.",
+]
+
+MEAL_TYPE_LABELS = {1: "breakfast", 2: "lunch", 3: "dinner", 4: "snack"}
+
