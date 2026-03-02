@@ -542,3 +542,71 @@ HealthyPath4Life — daily practice ideas for v3gn users
 - Notice language around “good” or “bad” foods.
 - Reframe restrictive thoughts into supportive ones.
 - Highlight how meals support energy, focus and mood.
+- Create a relaxed pre-meal ritual (water, breath, gratitude).
+- Eat seated with both feet on the floor when possible.
+- Put tempting snacks behind other foods, not in front.
+- Store sliced vegetables at eye level in the fridge.
+- Place sweets in an opaque container out of sight.
+- Keep a small bowl for measured crunchy snacks.
+- Pair a show or podcast only with main meals, not grazing.
+- Leave a glass by the sink as a water cue.
+- Record how certain meals affect sleep.
+- Try to finish dinners at least two hours before bed.
+- Add magnesium-rich foods like greens and nuts.
+- Make a habit of adding a plant-based food to each plate.
+- Keep a list of quick meal ideas that use pantry items.
+- Use canned beans and tomatoes for easy curries and chilli.
+- Try a simple homemade dressing instead of bottled ones.
+- Freeze ripe bananas for smoothies and snacks.
+- Pre-portion smoothie packs in freezer bags.
+- Include a vegetable or fruit at breakfast three days in a row.
+- Track streaks in v3gn for fun, not punishment.
+- Plan grocery shopping after a snack, not when hungry.
+- Eat a small snack before events with many desserts.
+- Serve yourself away from serving dishes, then sit.
+- Check in with fullness before reaching for seconds.
+- Enjoy favourite foods slowly and mindfully when you choose them.
+- Keep emergency snacks in your car or bag.
+- Try herbal tea after dinner instead of extra dessert.
+- Separate boredom from hunger by pausing 10 minutes.
+- Keep a short list of non-food comfort activities.
+- Notice which meals fuel great workouts or walks.
+- Add a source of protein after strength sessions.
+- Include carbohydrates before intense activity.
+- Balance high-fat meals with extra vegetables.
+- Avoid labelling whole days as “ruined” by one meal.
+- Set flexible ranges rather than strict rules.
+- Use neutral language like “more” and “less” instead of “never”.
+- Ask what support future-you might appreciate.
+- Practice saying no kindly at social events when full.
+- Bring a dish you enjoy to gatherings when possible.
+- Focus on connection instead of only food at events.
+- Eat a small snack before grocery shopping.
+- Avoid scrolling on your phone during meals.
+- Drink water while cooking to stay hydrated.
+- Keep a reusable container for leftovers ready.
+- Freeze single portions of cooked grains.
+- Label containers with dates and simple descriptions.
+- Rotate different colours of vegetables each week.
+- Experiment with breakfast-for-dinner occasionally.
+- Keep spices labelled and visible for quick use.
+- Prepare a simple vegetable soup base and customise later.
+- Pre-chop onions and garlic for quick cooking.
+- Saute extra vegetables for tomorrow’s omelette.
+- Add seeds to salads, soups or yoghurt.
+- Choose a gentle pace of change rather than an overhaul.
+- Celebrate consistency, not just novelty.
+- Tune in to how caffeine affects your appetite and sleep.
+- Pause notifications during mealtimes when possible.
+- Charge your phone away from the table.
+- Consider adding a multicolour salad once a week.
+- Try including fermented foods if you like them.
+- Encourage yourself the way you would a friend.
+- Keep a small notebook for meal ideas and reflections.
+- Allow flexible portions that match your hunger.
+- Keep low-effort frozen vegetables on hand.
+- Use pre-washed greens if it helps you eat more veggies.
+- Add fruit to water if it encourages hydration.
+- Pack cut citrus or apples for portable snacks.
+- Keep a checklist of habits inside a cupboard door.
+- Revisit your goals every month in light of real life.
