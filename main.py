@@ -474,3 +474,71 @@ HealthyPath4Life — daily practice ideas for v3gn users
 - Keep a bowl of fruit visible on the counter.
 - Carry a small reusable water bottle with you.
 - Try a new vegetable or fruit you rarely buy.
+- Make half of your plate vegetables at dinner.
+- Include a protein source at every main meal.
+- Use smaller plates if you tend to over-serve.
+- Pause halfway through meals to reassess hunger.
+- Add a side salad instead of fries once this week.
+- Roast a tray of mixed vegetables for easy add-ons.
+- Freeze individual portions of a favourite soup.
+- Use herbs and spices to cut back on salt.
+- Keep nuts or seeds on hand for quick snacks.
+- Pre-cut vegetables for easy grab-and-go snacking.
+- Schedule a recurring reminder to log meals.
+- Save three go-to breakfasts inside your own notes.
+- Pair fruit with protein or healthy fat for snacks.
+- Try to eat at roughly similar times each day.
+- Give yourself permission to enjoy food without guilt.
+- Use v3gn to explore meal ideas by path tag.
+- Add a small side of beans or lentils to dinner.
+- Try a meatless Monday or plant-focused evening meal.
+- Plan tomorrow’s breakfast before going to bed.
+- Write down three reasons you care about your health.
+- Choose whole fruit over fruit juice where possible.
+- Try swapping white rice for brown or mixed grains.
+- Include a colourful vegetable you enjoy, not just “shoulds”.
+- Add a spoonful of yogurt on spicy or rich meals.
+- Keep a simple list of pantry staples you like.
+- Build a “default” balanced plate formula for yourself.
+- Prepare overnight oats for mornings when you are rushed.
+- Pack leftovers for lunch instead of skipping meals.
+- Practice putting your fork down between bites.
+- Notice how different meals make your energy feel.
+- Eat at a table, even if you are alone.
+- Add a side of vegetables to take-away meals.
+- Try baking instead of frying when possible.
+- Keep a small note of meals that feel satisfying.
+- Use frozen vegetables for quick additions.
+- Store cut fruit in see-through containers at eye level.
+- Sit down to eat, rather than standing or walking.
+- Limit work at the computer while snacking.
+- Play calm music during dinner to slow your pace.
+- Start meals with a few bites of vegetables.
+- Share a meal idea with a friend for accountability.
+- Celebrate small wins, such as one extra glass of water.
+- Notice stress or boredom before reaching for food.
+- Take three slow breaths before opening the fridge.
+- Drink water between alcoholic beverages if you drink.
+- Choose grilled or baked options when eating out.
+- Ask for dressings on the side to control portions.
+- Add legumes to salads for extra protein and fibre.
+- Keep easy protein like boiled eggs in the fridge.
+- Switch to whole-grain bread if you enjoy it.
+- Slice vegetables into sticks for quick nibbling.
+- Explore herbs like basil, coriander or dill for flavour.
+- Experiment with spice blends to keep meals interesting.
+- Try one new healthy recipe per week.
+- Keep a backup freezer meal for busy nights.
+- Use leftovers creatively (e.g. bowls, wraps, salads).
+- Batch cook whole grains and refrigerate or freeze.
+- Portion trail mix into small containers in advance.
+- Pack snacks in your work or study bag every Sunday.
+- Reflect weekly on what worked and what did not.
+- Focus on progress over perfection.
+- Use v3gn stats to see your most common meal types.
+- Log at least one meal even on “off” days.
+- Attach a simple habit to something you already do.
+- Give yourself unconditional permission to eat enough.
+- Notice language around “good” or “bad” foods.
+- Reframe restrictive thoughts into supportive ones.
+- Highlight how meals support energy, focus and mood.
