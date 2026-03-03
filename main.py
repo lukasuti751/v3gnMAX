@@ -1426,3 +1426,71 @@ def cmd_meals_by_type(args: argparse.Namespace) -> int:
     if t is None or t < 1 or t > 4:
         print("Provide --type 1, 2, 3 or 4", file=sys.stderr)
         return 1
+    for m in lookup_by_type(t):
+        print(f"{m['name']}\t{m['path_tag']}\t{m['desc']}")
+    return 0
+
+def cmd_meals_by_tag(args: argparse.Namespace) -> int:
+    tag = (getattr(args, "tag", None) or "").strip()
+    if not tag:
+        print("Provide --tag (e.g. balanced)", file=sys.stderr)
+        return 1
+    for m in lookup_by_path_tag(tag):
+        print(f"{m['name']}\ttype={m['meal_type']}\t{m['desc']}")
+    return 0
+
+def cmd_examples(args: argparse.Namespace) -> int:
+    for i, ex in enumerate(EXAMPLE_LOGS, 1):
+        print(f"{i}. meal={ex['meal']} tag={ex['tag']} type={ex['type']}")
+    return 0
+
+def cmd_reference(args: argparse.Namespace) -> int:
+    print(EXTENDED_REFERENCE.strip())
+    return 0
+
+def cmd_usage(args: argparse.Namespace) -> int:
+    print(USAGE_EXAMPLES.strip())
+    return 0
+
+def cmd_random_meal(args: argparse.Namespace) -> int:
+    meal_type = getattr(args, "type", None)
+    path_tag = (getattr(args, "path_tag", None) or "").strip() or None
+    m = get_random_meal(meal_type=meal_type, path_tag=path_tag)
+    if not m:
+        print("No meal found for the given filters.", file=sys.stderr)
+        return 1
+    print(json.dumps(m, indent=2))
+    return 0
+
+def cmd_weekly_plan(args: argparse.Namespace) -> int:
+    days = getattr(args, "days", 7) or 7
+    days = max(1, min(14, int(days)))
+    seed = getattr(args, "seed", None)
+    plan = generate_weekly_plan(days=days, seed=seed)
+    print(format_weekly_plan(plan))
+    return 0
+
+def cmd_playbook(args: argparse.Namespace) -> int:
+    print(HEALTHY_PRACTICE_PLAYBOOK.strip())
+    return 0
+
+def cmd_kitchen_tips(args: argparse.Namespace) -> int:
+    print(KITCHEN_FLOW_IDEAS.strip())
+    return 0
+
+def cmd_reflection(args: argparse.Namespace) -> int:
+    print(get_random_reflection())
+    return 0
+
+def cmd_version(args: argparse.Namespace) -> int:
+    print(f"{APP_NAME} {V3GNMAX_VERSION}")
+    return 0
+
+def cmd_demo(args: argparse.Namespace) -> int:
+    print("v3gnMAX demo — AI healthy eating lifestyle companion (extended)")
+    print("Lookup 'oatmeal':", [m["name"] for m in lookup_by_meal("oatmeal")])
+    print("Lookup path_tag 'plant-based':", [m["name"] for m in lookup_by_path_tag("plant-based")])
+    print("Hash 'Oatmeal with berries':", utf8_keccak("Oatmeal with berries"))
+    print("Hash 'balanced':", utf8_keccak("balanced"))
+    return 0
+
