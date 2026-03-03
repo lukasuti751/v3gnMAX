@@ -950,3 +950,139 @@ HealthyPath4Life — simple planning scenarios to explore
 - Revisit plans mid-week and shift meals as needed.
 - Note any patterns: which meals often get skipped.
 - Adjust portion sizes of recipes for your household size.
+- Plan second servings intentionally when they help.
+- Avoid planning too many new recipes at once.
+- Pair new recipes with familiar sides or staples.
+- Keep a list of restaurants that align with your intentions.
+- Plan where takeaway might fit in a balanced way.
+- Use planning time as a moment to reconnect with your goals.
+- Ask how you want to feel during the week ahead.
+- Choose meals that support that feeling where possible.
+- Plan simple breakfasts on mornings after late nights.
+- Plan energising meals before high-demand days.
+- Plan gentler meals after days with rich food.
+- Think through cooking times alongside your schedule.
+- Plan oven-use efficiently if energy prices are a concern.
+- Group baking tasks (veg, bread, snacks) into one session.
+- Check kitchen equipment in advance for certain recipes.
+- Keep recipes that worked well in a dedicated folder.
+- Mark favourite recipes with quick notes for next time.
+- Use v3gn’s stats to notice which meal types you log most.
+- Explore balancing other meal types in your planning.
+- Keep planning notes kind and flexible rather than rigid.
+"""
+
+PATH_EXPERIMENT_IDEAS = """
+HealthyPath4Life — experimenting with Veg3n path tags
+
+- Spend one week focusing on the balanced path tag.
+- Log how balanced meals affect your energy across the week.
+- Spend one week focusing on plant-based path ideas.
+- Explore new plant proteins like lentils, tofu or tempeh.
+- Try building a plant-forward bowl at least twice this week.
+- Use high-protein path tags for breakfasts that include eggs, yogurt or beans.
+- Experiment with low-sugar choices in snacks for a few days.
+- Use mindful path tags when you eat without screens.
+- Try meal-prep paths when you cook in batches on weekends.
+- Join a breakfast-club style path for morning consistency.
+- Explore lunch-goals paths for midday energy support.
+- Use dinner-balance tags when you prioritise vegetables at night.
+- Tag snacks as snack-smart when they support your goals.
+- Try flexitarian tags when including both plant and animal foods.
+- Track which path tags feel most natural to you right now.
+- Notice if certain tags bring a sense of pressure.
+- Gently adjust away from tags that feel too demanding.
+- Use tags to highlight what is going well, not what is wrong.
+- Keep short notes on how each path experiment felt.
+- Alternate weeks of different focus tags over a season.
+- Compare how you feel during plant-based focus weeks.
+- Compare how you feel during high-protein focus weeks.
+- Try combining two tags in your personal notes (e.g. balanced + mindful).
+- Use v3gn stats to review which tags you used most.
+- Reflect on whether your tag usage matches your intentions.
+- Explore new tags gradually rather than all at once.
+- Create small personal rules for each tag that feel kind.
+- Review tags monthly and retire any that no longer serve you.
+- Add new tags in your notes that better match your reality.
+- Share tag ideas with friends using the same tools.
+- Treat path experiments like science, not exams.
+- Celebrate curiosity whenever you try a new tag.
+- Use tags to mark meals that were especially enjoyable.
+- Use tags to highlight meals that supported good sleep.
+- Use tags to note meals that prepared you for workouts.
+- Track days when you hit a personal streak on a specific tag.
+- Reflect on how path experiments influence stress levels.
+- Consider aligning path tags with seasons (summer, winter foods).
+- Adjust path focus during busy work or school periods.
+- Use fewer tags during stressful times to keep things simple.
+- Expand tag use again when life feels more spacious.
+- Let path experiments inform, not dictate, your choices.
+- Remember that tags are tools, not rules.
+- Revisit path notes occasionally to see how you have grown.
+- Trust yourself to evolve your paths over time.
+"""
+
+REFLECTION_PROMPTS_LONGFORM = """
+HealthyPath4Life — long-form reflection prompts for journaling alongside v3gn
+
+- Describe a breakfast that left you feeling energised for hours. What was in it?
+- Recall a meal that felt especially comforting. What made it feel that way?
+- Write about a time you felt very hungry. What led up to that moment?
+- Explore a time you ate quickly. How did your body feel during and after?
+- Think of a day when eating felt easy and natural. What supported that ease?
+- Describe the role that culture plays in your favourite foods.
+- Reflect on early messages you received about “healthy” and “unhealthy” foods.
+- Consider which of those messages you would like to keep and which to soften.
+- Write about a time you listened closely to hunger and fullness cues.
+- Write about a time it felt hard to listen to those cues.
+- Reflect on how stress has shaped your eating patterns recently.
+- Describe a gentle way you might support yourself during stress.
+- Explore how different social settings affect what and how you eat.
+- Recall a gathering where food felt like a joyful part of connection.
+- Reflect on a time you felt judged for what you were eating.
+- Consider how you might speak kindly to yourself in similar moments.
+- Write about a day when you skipped meals. How did you feel later on?
+- Reflect on any patterns where you over-correct after a rich meal.
+- Describe what balance means to you in the context of food.
+- Imagine a day of eating that feels balanced and satisfying.
+- Explore any fears that come up around certain foods.
+- Consider how you might challenge those fears gently.
+- Write about a food you enjoy but rarely allow yourself to have.
+- Explore what it would be like to include that food with intention.
+- Reflect on how movement and meals interact in your life.
+- Describe a time you fuelled activity in a way that felt good.
+- Describe a time you felt under-fuelled for an activity.
+- Consider how sleep patterns intersect with your appetite.
+- Write about evenings when you snack more than you intend.
+- Explore what is happening emotionally or logistically at those times.
+- Reflect on a habit you would like to add rather than remove.
+- Describe one tiny change that feels realistic this week.
+- Write about a time when you felt proud of a food-related decision.
+- Consider what made that moment possible.
+- Reflect on the role of planning in your current season of life.
+- Explore how much structure helps and where it feels restrictive.
+- Describe a flexible planning style that might suit you.
+- Write about how you feel when you log meals in v3gn.
+- Consider what you hope to learn from your logs over time.
+- Reflect on which path tags feel like home for you.
+- Explore any longing you have for new paths or directions.
+- Describe how you would like meals to feel one year from now.
+- Write a note from future-you describing supportive patterns.
+- Reflect on the difference between discipline and self-compassion.
+- Consider where compassion might open up new possibilities.
+- Write about a time you were kind to yourself around food.
+- Describe the people who influence your eating habits most.
+- Explore how you might communicate needs or boundaries with them.
+- Reflect on how celebrations and holidays affect your patterns.
+- Consider ways to keep joy while also honouring your body.
+- Write about morning routines that support nourishing choices.
+- Reflect on evening routines that could make mornings easier.
+- Describe simple ways to make your kitchen more inviting.
+- Explore how you feel when cooking alone versus with others.
+- Reflect on the sensory experience of a favourite meal.
+- Describe the colours, textures and aromas in as much detail as you can.
+- Write about how you would feed someone you care deeply about.
+- Consider offering that same care to yourself.
+- Reflect on the idea that no single meal defines your health.
+- Explore how that idea might shift your mindset.
+- Write a list of five meals that feel both nourishing and enjoyable.
