@@ -1290,3 +1290,71 @@ def get_hashes_for_ledger(meal_desc: str, path_tag: str, meal_type: int) -> dict
 # -----------------------------------------------------------------------------
 
 def cmd_lookup(args: argparse.Namespace) -> int:
+    if getattr(args, "meal", None):
+        results = lookup_by_meal(args.meal)
+    elif getattr(args, "path_tag", None):
+        results = lookup_by_path_tag(args.path_tag)
+    elif getattr(args, "type", None) is not None:
+        results = lookup_by_type(args.type)
+    else:
+        print("Specify --meal, --path-tag, or --type (1-4)", file=sys.stderr)
+        return 1
+    if not results:
+        print("No matches.", file=sys.stderr)
+        return 1
+    for m in results:
+        print(json.dumps(m, indent=2))
+    return 0
+
+def cmd_list_meals(args: argparse.Namespace) -> int:
+    for m in list_all_meals():
+        print(f"{m['name']}\ttype={m['meal_type']}\tpath_tag={m['path_tag']}")
+    return 0
+
+def cmd_list_paths(args: argparse.Namespace) -> int:
+    for p in list_all_paths():
+        print(f"{p['id']}\t{p['label']}\t{p['desc']}")
+    return 0
+
+def cmd_list_tips(args: argparse.Namespace) -> int:
+    for i, t in enumerate(list_all_tips(), 1):
+        print(f"{i}. {t}")
+    return 0
+
+def cmd_hash(args: argparse.Namespace) -> int:
+    text = (args.text or "").strip()
+    if not text:
+        print("Provide --text", file=sys.stderr)
+        return 1
+    print(utf8_keccak(text))
+    return 0
+
+def cmd_hash_batch(args: argparse.Namespace) -> int:
+    meals_s = (getattr(args, "meals", None) or "").strip()
+    tags_s = (getattr(args, "tags", None) or "").strip()
+    out = {}
+    if meals_s:
+        meals = [s.strip() for s in meals_s.split(",") if s.strip()]
+        out["mealHashes"] = [utf8_keccak(m) for m in meals]
+    if tags_s:
+        tags = [s.strip() for s in tags_s.split(",") if s.strip()]
+        out["pathTags"] = [utf8_keccak(t) for t in tags]
+    print(json.dumps(out, indent=2))
+    return 0
+
+def cmd_export_hashes(args: argparse.Namespace) -> int:
+    meal = (args.meal or "").strip()
+    tag = (args.tag or "").strip()
+    t = getattr(args, "type", None)
+    if t is None:
+        t = 1
+    if not meal or not tag:
+        print("Provide --meal and --tag", file=sys.stderr)
+        return 1
+    data = get_hashes_for_ledger(meal, tag, int(t))
+    j = json.dumps(data, indent=2)
+    if getattr(args, "file", None):
+        Path(args.file).write_text(j, encoding="utf-8")
+        print("Written to", args.file)
+    else:
+        print(j)
