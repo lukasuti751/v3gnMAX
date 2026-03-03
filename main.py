@@ -1086,3 +1086,71 @@ HealthyPath4Life — long-form reflection prompts for journaling alongside v3gn
 - Reflect on the idea that no single meal defines your health.
 - Explore how that idea might shift your mindset.
 - Write a list of five meals that feel both nourishing and enjoyable.
+- Describe how you might incorporate them more often.
+- Reflect on any comparison you experience around food or bodies.
+- Consider how you might step away from unhelpful comparison.
+- Write about a non-scale sign of progress that matters to you.
+- Explore how you can notice and celebrate those signs.
+- Reflect on the season of life you are currently in.
+- Describe what realistic nourishment looks like in this season.
+- Write about boundaries that might protect your time to eat.
+- Consider how technology supports or disrupts meals for you.
+- Reflect on any labels you use for yourself around food.
+- Explore whether those labels feel accurate or limiting.
+- Write a compassionate description of your relationship with food today.
+- Describe how you hope that relationship will evolve.
+- Reflect on ways you already care for your body each day.
+- Consider one more tiny way you might add to that care.
+- Write about what “enough” looks like in your context.
+- Explore how v3gn and HealthyPath4Life can be allies, not judges.
+- Describe a mantra or phrase that feels supportive around meals.
+- Reflect on how you might remind yourself of that phrase each day.
+"""
+
+DOC_VERSION_FOOTER = """
+v3gn reference notes
+--------------------
+
+- This CLI is a local companion to on-chain Veg3n data.
+- It does not store or transmit private keys.
+- Meal and path information lives only in your environment or ledger.
+- Use it to experiment with hashes and ideas before writing transactions.
+- Combine it with the HealthyPath4Life interface for a full experience.
+- Remember that none of this is medical advice.
+- Always adapt suggestions to your own context and professional guidance.
+- Think of this tool as a gentle prompt, not a strict rulebook.
+- Update your own scripts and notes as your needs evolve.
+- Future versions of the app may add new commands and references.
+- You can extend this file with your own helper functions if you wish.
+- Keep your environment and dependencies up to date for security.
+- Thank yourself for taking time to care for your future self.
+"""
+
+
+def get_meal_by_index(index: int) -> dict | None:
+    if 0 <= index < len(MEALS):
+        return MEALS[index]
+    return None
+
+
+def get_path_by_id(path_id: str) -> dict | None:
+    path_id_lower = path_id.strip().lower()
+    for p in PATH_TAGS:
+        if p["id"].lower() == path_id_lower:
+            return p
+    return None
+
+
+def validate_meal_type(t: int) -> bool:
+    return t in (1, 2, 3, 4)
+
+
+def format_meal_line(m: dict) -> str:
+    return f"{m['name']}\ttype={m['meal_type']}\tpath_tag={m['path_tag']}\t{m['desc']}"
+
+
+def get_meal_type_label(t: int) -> str:
+    return MEAL_TYPE_LABELS.get(t, "unknown")
+
+
+def get_all_path_tag_ids() -> list[str]:
