@@ -1222,3 +1222,71 @@ def generate_weekly_plan(days: int = 7, seed: int | None = None) -> list[dict]:
 
 def format_weekly_plan(plan: list[dict]) -> str:
     """Format weekly plan for console output."""
+    out = []
+    for i, day in enumerate(plan, 1):
+        out.append(f"Day {i}:")
+        for slot, meal in day.items():
+            name = meal["name"] if meal else "—"
+            tag = meal.get("path_tag", "") if meal else ""
+            out.append(f"  {slot}: {name}" + (f" ({tag})" if tag else ""))
+        out.append("")
+    return "\n".join(out).strip()
+
+# -----------------------------------------------------------------------------
+# HASHING (EVM-compatible)
+# -----------------------------------------------------------------------------
+
+def keccak256_hex(data: bytes) -> str:
+    try:
+        from Crypto.Hash import keccak
+        h = keccak.new(digest_bits=256)
+        h.update(data)
+        return "0x" + h.hexdigest()
+    except Exception:
+        pass
+    h = hashlib.sha3_256(data)
+    return "0x" + h.hexdigest()
+
+def utf8_keccak(text: str) -> str:
+    return keccak256_hex(text.encode("utf-8"))
+
+# -----------------------------------------------------------------------------
+# LOOKUP
+# -----------------------------------------------------------------------------
+
+def lookup_by_meal(name: str) -> list[dict]:
+    name_lower = name.strip().lower()
+    return [m for m in MEALS if name_lower in m["name"].lower()]
+
+def lookup_by_path_tag(tag: str) -> list[dict]:
+    tag_lower = tag.strip().lower()
+    return [m for m in MEALS if tag_lower in m["path_tag"].lower()]
+
+def lookup_by_type(meal_type: int) -> list[dict]:
+    return [m for m in MEALS if m["meal_type"] == meal_type]
+
+def suggest(keyword: str) -> list[dict]:
+    kw = keyword.strip().lower()
+    return [m for m in MEALS if kw in m["name"].lower() or kw in m["path_tag"].lower() or kw in m["desc"].lower()]
+
+def list_all_meals() -> list[dict]:
+    return MEALS
+
+def list_all_paths() -> list[dict]:
+    return PATH_TAGS
+
+def list_all_tips() -> list[str]:
+    return TIPS
+
+def get_hashes_for_ledger(meal_desc: str, path_tag: str, meal_type: int) -> dict:
+    return {
+        "mealHash": utf8_keccak(meal_desc),
+        "pathTag": utf8_keccak(path_tag),
+        "mealType": meal_type,
+    }
+
+# -----------------------------------------------------------------------------
+# CLI HANDLERS
+# -----------------------------------------------------------------------------
+
+def cmd_lookup(args: argparse.Namespace) -> int:
