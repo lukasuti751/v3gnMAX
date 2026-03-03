@@ -678,3 +678,71 @@ HealthyPath4Life — kitchen flow and environment ideas
 - Keep hot pads or oven mitts easy to grab.
 - Wrap herbs in slightly damp towels to prolong freshness.
 - Freeze washed and trimmed greens if they begin to wilt.
+- Use glass jars for soups and stews when storing or freezing.
+- Label frozen meals with contents and reheating notes.
+- Group smoothie ingredients together in the freezer.
+- Set up a simple smoothie station near the blender.
+- Keep knives away from clutter to support safe chopping.
+- Place chopping boards near the sink for quick rinsing.
+- Keep dish soap and a brush clearly visible.
+- Run a quick sink of soapy water before starting to cook.
+- Soak pots and pans promptly after use.
+- Wipe down stove surfaces once they are cool.
+- Organise spices alphabetically or by cuisine if helpful.
+- Place a small bin or tray to collect recyclables.
+- Keep a fire-safe area around the stove.
+- Take a short stretch break while waiting for water to boil.
+- Use timers to remind you to check on baking items.
+- Keep an apron hanging near the kitchen entrance.
+- Designate a drawer for reusable cutlery for lunches.
+- Store cutting boards away from sources of moisture.
+- Place herbs in jars with water like small bouquets.
+- Keep a few “one pan” recipes visible on the fridge.
+- Use stable step mats to avoid slipping near the sink.
+- Store heavier items lower for safety.
+- Keep light items like herbs and spices higher.
+- Pre-measure spices for recipes into small bowls.
+- Use chilled bowls for salads in warmer months.
+- Keep a dedicated space for a slow cooker or rice cooker.
+- Store recipe books or printouts in a dry space.
+- Take a picture of recipes you like for quick recall.
+- Keep pens near the recipe area for small tweaks.
+- Note down what worked well after trying a new recipe.
+- Store lunch boxes and bottles together in one cupboard.
+- Keep reusable bags or totes by the door for grocery runs.
+- Prioritise a clear walking path from fridge to stove.
+- Use drawer organisers to separate utensils.
+- Group baking trays together vertically.
+- Store parchment paper and foil within easy reach.
+- Lay a cloth under cutting boards if they slip.
+- Place sharp tools out of reach of small children.
+- Keep a safe place to cool hot dishes.
+- Arrange surfaces so you can set down groceries quickly.
+- Assign a zone for unpacking and washing produce.
+- Keep a simple salad spinner if you enjoy leafy greens.
+- Store nuts and seeds in airtight containers.
+- Place frequently used cereals or grains at eye level.
+- Try to keep a clutter-free corner for plating and photos.
+- Keep a small jar of tasting spoons for sauces and soups.
+- Use clear bins to group snacks in the pantry.
+- Rotate through herbs and spice blends to avoid boredom.
+- Keep a list of “use me first” items in the fridge.
+- Designate nights for “clear the fridge” meals.
+- Save jars for storing leftovers or dressings where appropriate.
+- Ensure good airflow in the fridge by avoiding overcrowding.
+- Check fridge temperatures for food safety.
+- Place a small container of baking soda to reduce odours.
+- Use fridge door space for condiments rather than milk.
+- Group plant-based proteins in a clear fridge bin.
+- Keep cooking oils away from direct sunlight.
+- Store potatoes and onions in a cool, dark place.
+- Keep a small basket for fresh bread or wraps.
+- Wipe cupboard handles regularly for hygiene.
+- Allocate a tiny drawer or box for measuring tools.
+- Keep extra dish towels within reach of splash zones.
+- Place cutting boards upright to dry after washing.
+- Ensure that knives are completely dry before storing.
+- Use sturdy, heat-proof utensils when cooking.
+- Keep a spare set of tongs near the stove.
+- Hang a calendar where you can pencil in meal plans.
+- Keep coupons or store loyalty cards near grocery bags.
