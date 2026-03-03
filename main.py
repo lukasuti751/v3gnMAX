@@ -814,3 +814,71 @@ HealthyPath4Life — gentle reflections for meals and snacks
 - Ask what else might support you emotionally besides food.
 - Keep a short list of non-food comforts on your phone.
 - Reflect on the company you keep during meals.
+- Ask if particular people or settings help you eat mindfully.
+- Consider simple changes if certain patterns feel unhelpful.
+- Celebrate any instance of slowing down or checking in.
+- Acknowledge that distraction is normal in busy lives.
+- Consider taking a few breaths after finishing the meal.
+- Ask how this meal aligns with your overall intentions.
+- Reflect on what worked well about this meal.
+- Reflect on anything you might tweak next time.
+- Capture learnings in a gentle note, not a strict rule.
+- If the meal felt unsatisfying, ask what was missing.
+- If the meal felt wonderful, note what supported that.
+- Compare experiences of different breakfast types.
+- Compare how you feel after various snacks.
+- Notice which snacks sustain you between meals.
+- Explore how adding fruit or vegetables changes things.
+- Try pairing carbohydrates with protein or fat and observe.
+- Reflect on drinking water before, during or after meals.
+- Notice whether eating in silence feels calming or stressful.
+- Alternate between mindful bites and conversation when socialising.
+- Ask how your body feels before and after social meals.
+- Reflect on the stories you have learned about certain foods.
+- Consider which stories still serve you and which do not.
+- Practice speaking kindly to yourself about food choices.
+- Notice when perfectionism appears in your thoughts.
+- Remind yourself that patterns matter more than single meals.
+- Let go of the idea of “starting over” with every slip.
+- Acknowledge that appetite ebbs and flows day to day.
+- Observe how stress shifts your hunger or cravings.
+- Gently experiment with strategies that ease stress.
+- Reflect on how sleep quality affects hunger.
+- Consider how movement influences your appetite.
+- Note any patterns between heavy meals and energy dips.
+- Observe how lighter meals feel in contrast.
+- Pay attention to how cultural foods fit into your patterns.
+- Celebrate meals that connect you to your culture or family.
+- Make room for flexibility around special occasions.
+- Reflect on what felt joyful about a celebration meal.
+- Ask how you might support your body after rich meals.
+- Notice when you skip meals and how that feels later.
+- Experiment with more regular eating if that feels better.
+- Reflect on how long gaps impact mood and focus.
+- Explore whether gentle snacks help stabilise your day.
+- Track simple cues like irritability or fatigue.
+- Ask which meals help you feel grounded and steady.
+- Keep a note of meals that feel too heavy at certain times.
+- Adjust portion sizes when you have new information.
+- Recognise that needs change across seasons of life.
+- Reflect on any all-or-nothing thoughts that appear.
+- Gently replace them with more flexible phrases.
+- Invite curiosity instead of criticism into your reflections.
+- Consider what future-you would thank you for.
+- Acknowledge that some days mindful eating is easier.
+- Trust that practice gradually builds familiarity.
+- Use v3gn logs as a mirror, not a scorecard.
+- Notice which path tags feel most aligned with your goals.
+- Experiment with new paths gently and track how they feel.
+- Use reflections to adjust your goals over time.
+- Honour your body’s cues alongside your values and context.
+- Remind yourself that you deserve adequate, enjoyable food.
+- Recognise that every meal is an opportunity to learn.
+"""
+
+MEAL_PLANNING_SCENARIOS = """
+HealthyPath4Life — simple planning scenarios to explore
+
+- Plan a “no-recipe” week using only simple templates.
+- Choose three breakfasts you can rotate easily.
+- Choose three lunches that pack well for work or school.
