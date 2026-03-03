@@ -882,3 +882,71 @@ HealthyPath4Life — simple planning scenarios to explore
 - Plan a “no-recipe” week using only simple templates.
 - Choose three breakfasts you can rotate easily.
 - Choose three lunches that pack well for work or school.
+- Choose three dinners you can make in under 30 minutes.
+- Build a grocery list directly from those nine ideas.
+- Plan one plant-focused dinner each week to try new meals.
+- Plan one high-protein breakfast that feels gentle on digestion.
+- Add one “clear-the-fridge” meal to every week.
+- Include at least one soup or stew for flexible leftovers.
+- Plan a grain bowl night with mix-and-match toppings.
+- Plan a wrap night with vegetables, spreads and proteins.
+- Schedule one slow-cooker or pressure-cooker meal.
+- Include one meal that uses mostly pantry items.
+- Plan one comfort meal that supports emotional ease.
+- Identify which nights usually feel busiest.
+- Assign your simplest meals to the busiest nights.
+- Assign more involved recipes to flexible evenings.
+- Keep one backup frozen meal for unexpected days.
+- Plan a “picnic-style” dinner with easy components.
+- Include snacks in your weekly planning, not just meals.
+- Check existing pantry items before writing a list.
+- Use v3gn to note ideas under suitable path tags.
+- Create a shortlist of meals everyone in the home enjoys.
+- Label a few meals as “weeknight heroes”.
+- Plan to batch cook a grain at the start of the week.
+- Plan to batch cook a protein like beans or chicken pieces.
+- Plan to wash and chop vegetables once for multiple uses.
+- Consider which meals can share ingredients (e.g. rice, beans).
+- Group recipes that use similar fresh items to reduce waste.
+- Plan bowls that use leftover roast vegetables.
+- Plan salads that use leftover cooked grains.
+- Plan wraps using leftover proteins and vegetables.
+- Plan omelettes or frittatas to use small amounts of veg.
+- Write down at least one very simple backup breakfast.
+- Write down at least one very simple backup lunch.
+- Write down at least one very simple backup dinner.
+- Identify meals that can be assembled without cooking.
+- Note which ingredients can move between meals if plans change.
+- Assign one evening to check supplies and adjust.
+- Keep planning sessions short and light-hearted.
+- Involve other household members in choosing meals.
+- Let each person choose one meal for the week.
+- Keep a running list of meals that worked well.
+- Highlight meals that reheat particularly well.
+- Note any meals that were too complex for this season.
+- Adjust recipes to better match your energy and skills.
+- Plan themed nights like “grain bowl Tuesday” if fun.
+- Rotate themes when you get bored of current ones.
+- Check your calendar for late finishes and plan accordingly.
+- Plan portable meals for evenings out or long days.
+- Think about how leftovers will be stored and labelled.
+- Check container availability before batch cooking.
+- Plan ahead for travel days with simpler options.
+- Include one meal that uses up herbs or greens.
+- Include one meal that uses up root vegetables.
+- Check which condiments or sauces are running low.
+- Refill staples like oil, spices or grains as needed.
+- Look ahead to any celebrations or guests.
+- Plan meals that can stretch easily with extra sides.
+- Keep breakfast ingredients flexible for different appetites.
+- Make room for spontaneous meals out when it feels right.
+- Allow a buffer night for leftovers or simple toast-and-eggs.
+- Plan multiple uses for perishable items like fresh berries.
+- Consider seasonality when choosing produce-heavy meals.
+- Swap in frozen produce if fresh options are limited.
+- Plan shelf-stable snacks for backup support.
+- Store planning notes where you will actually see them.
+- Use digital tools or paper, whichever you prefer.
+- Revisit plans mid-week and shift meals as needed.
+- Note any patterns: which meals often get skipped.
+- Adjust portion sizes of recipes for your household size.
