@@ -1494,3 +1494,71 @@ def cmd_demo(args: argparse.Namespace) -> int:
     print("Hash 'balanced':", utf8_keccak("balanced"))
     return 0
 
+def cmd_interactive(args: argparse.Namespace) -> int:
+    print("v3gnMAX interactive. Commands: lookup meal <name> | lookup path-tag <tag> | list-meals | list-tips | hash <text> | suggest <keyword> | random-meal | reflection | quit")
+    while True:
+        try:
+            line = input("v3gn> ").strip()
+            if not line:
+                continue
+            if line.lower() in ("quit", "exit", "q"):
+                break
+            parts = line.split(maxsplit=2)
+            cmd = (parts[0].lower() if parts else "")
+            if cmd == "lookup" and len(parts) >= 3:
+                kind, value = parts[1].lower(), parts[2]
+                if kind == "meal":
+                    for m in lookup_by_meal(value):
+                        print(m)
+                elif kind == "path-tag":
+                    for m in lookup_by_path_tag(value):
+                        print(m)
+                elif kind == "type":
+                    t = int(value) if value.isdigit() else 0
+                    if 1 <= t <= 4:
+                        for m in lookup_by_type(t):
+                            print(m)
+            elif cmd == "list-meals":
+                cmd_list_meals(args)
+            elif cmd == "list-paths":
+                cmd_list_paths(args)
+            elif cmd == "list-tips":
+                cmd_list_tips(args)
+            elif cmd == "hash" and len(parts) >= 2:
+                print(utf8_keccak(parts[1]))
+            elif cmd == "suggest" and len(parts) >= 2:
+                for m in suggest(parts[1]):
+                    print(m["name"], m["path_tag"])
+            elif cmd == "random-meal":
+                m = get_random_meal()
+                print(json.dumps(m, indent=2) if m else "No meal.")
+            elif cmd == "reflection":
+                print(get_random_reflection())
+            else:
+                print("Unknown command. Try: lookup meal oatmeal | list-meals | hash Oatmeal | random-meal | reflection")
+        except EOFError:
+            break
+        except KeyboardInterrupt:
+            print()
+            break
+    return 0
+
+# -----------------------------------------------------------------------------
+# MAIN
+# -----------------------------------------------------------------------------
+
+def main() -> int:
+    p = argparse.ArgumentParser(description="v3gnMAX — Extended AI healthy eating companion and Veg3n ledger helpers")
+    sub = p.add_subparsers(dest="command", help="Commands")
+
+    lookup_p = sub.add_parser("lookup", help="Lookup meals by name, path tag or type")
+    lookup_p.add_argument("--meal", type=str, help="Meal name (partial)")
+    lookup_p.add_argument("--path-tag", type=str, dest="path_tag", help="Path tag id")
+    lookup_p.add_argument("--type", type=int, help="Meal type 1-4")
+    lookup_p.set_defaults(func=cmd_lookup)
+
+    sub.add_parser("list-meals", help="List all meals").set_defaults(func=cmd_list_meals)
+    sub.add_parser("list-paths", help="List path tags").set_defaults(func=cmd_list_paths)
+    sub.add_parser("list-tips", help="List healthy eating tips").set_defaults(func=cmd_list_tips)
+
+    hash_p = sub.add_parser("hash", help="Keccak256 hash of text")
