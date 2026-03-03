@@ -1154,3 +1154,71 @@ def get_meal_type_label(t: int) -> str:
 
 
 def get_all_path_tag_ids() -> list[str]:
+    return [p["id"] for p in PATH_TAGS]
+
+
+def get_meals_for_export(meal_desc: str, path_tag: str, meal_type: int) -> dict:
+    return get_hashes_for_ledger(meal_desc, path_tag, meal_type)
+
+
+def count_meals_by_type(t: int) -> int:
+    return len(lookup_by_type(t))
+
+
+def count_meals_by_path_tag(tag: str) -> int:
+    return len(lookup_by_path_tag(tag))
+
+
+def first_meal_match(name: str) -> dict | None:
+    results = lookup_by_meal(name)
+    return results[0] if results else None
+
+
+def first_path_match(tag: str) -> dict | None:
+    results = [p for p in PATH_TAGS if tag.lower() in p["id"].lower()]
+    return results[0] if results else None
+
+
+# -----------------------------------------------------------------------------
+# v3gnMAX EXTENDED HELPERS
+# -----------------------------------------------------------------------------
+
+def get_random_meal(meal_type: int | None = None, path_tag: str | None = None) -> dict | None:
+    """Return a random meal, optionally filtered by type and/or path tag."""
+    pool = MEALS
+    if meal_type is not None and 1 <= meal_type <= 4:
+        pool = [m for m in pool if m["meal_type"] == meal_type]
+    if path_tag:
+        tag_lower = path_tag.strip().lower()
+        pool = [m for m in pool if tag_lower in m["path_tag"].lower()]
+    return random.choice(pool) if pool else None
+
+
+def get_random_tip() -> str:
+    """Return a random healthy eating tip."""
+    return random.choice(TIPS) if TIPS else ""
+
+
+def get_random_reflection() -> str:
+    """Return a random line from MINDFUL_EATING_REFLECTIONS (bullet lines only)."""
+    lines = [s.strip() for s in MINDFUL_EATING_REFLECTIONS.splitlines() if s.strip().startswith("-")]
+    return random.choice(lines) if lines else "Pause and notice how this meal feels in your body."
+
+
+def generate_weekly_plan(days: int = 7, seed: int | None = None) -> list[dict]:
+    """Generate a simple weekly plan: one breakfast, one lunch, one dinner, one snack per day."""
+    if seed is not None:
+        random.seed(seed)
+    plan = []
+    for _ in range(max(1, min(days, 14))):
+        plan.append({
+            "breakfast": get_random_meal(meal_type=1),
+            "lunch": get_random_meal(meal_type=2),
+            "dinner": get_random_meal(meal_type=3),
+            "snack": get_random_meal(meal_type=4),
+        })
+    return plan
+
+
+def format_weekly_plan(plan: list[dict]) -> str:
+    """Format weekly plan for console output."""
