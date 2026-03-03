@@ -746,3 +746,71 @@ HealthyPath4Life — kitchen flow and environment ideas
 - Keep a spare set of tongs near the stove.
 - Hang a calendar where you can pencil in meal plans.
 - Keep coupons or store loyalty cards near grocery bags.
+- Use stackable containers to maximise fridge space.
+- Store meats on the lowest shelf in leak-proof containers.
+- Group dairy products together away from the fridge door.
+- Keep a gentle all-purpose spray for wiping counters.
+- Wipe cutting boards immediately after use.
+- Rinse sink basins after emptying pots or pans.
+- Use drying racks that allow good airflow around dishes.
+- Rotate dish cloths and sponges for freshness.
+- Let pots and pans dry fully before stacking.
+- Store kitchen appliances that you use rarely in higher cupboards.
+- Place frequently used appliances like blenders at counter level.
+- Maintain a safe, clutter-free area around electrical sockets.
+- Keep cords organised and away from hot elements.
+- Unplug small appliances when not in use.
+- Make room for a comfortable standing position while cooking.
+- Consider a small kitchen mat to reduce fatigue.
+- Keep the floor clear of boxes and bags.
+- Create a basic checklist for pre-cooking setup.
+- Take a slow breath before you begin prepping food.
+- Put on music or a podcast that supports a calm mood.
+- Adjust lighting or open curtains to invite natural light.
+- Declutter one small area of the kitchen each week.
+- Celebrate how these small changes support regular cooking.
+"""
+
+MINDFUL_EATING_REFLECTIONS = """
+HealthyPath4Life — gentle reflections for meals and snacks
+
+- Before eating, ask: What does my body need right now?
+- Notice where you feel hunger in the body.
+- Give your hunger a simple word: gentle, loud, steady, quiet.
+- Ask if you are physically hungry, emotionally hungry, or both.
+- Take a breath and name your current emotion without judging it.
+- Consider what kind of meal would feel supportive in this moment.
+- Observe smells, colours and textures before the first bite.
+- Take the first bite slowly and really notice the taste.
+- Check in on your hunger level after a few bites.
+- Ask if the meal is matching what you were hoping for.
+- Notice if you are rushing, and gently slow down if you can.
+- Put utensils down briefly to pause between bites.
+- Look away from screens for a few seconds while chewing.
+- See if you can spot at least two colours on your plate.
+- Appreciate the effort that brought this food to you.
+- If you feel guilt, gently remind yourself that all foods fit.
+- Ask: What do I enjoy about this meal?
+- Ask: How is this meal helping my energy or mood?
+- Notice the moment you first feel comfortable, not stuffed.
+- Consider what the difference feels like between satisfied and overly full.
+- If you pass comfortable fullness, note it kindly for next time.
+- Reflect on whether the environment is helping you enjoy the meal.
+- Ask if a change in lighting, noise or posture might help.
+- Consider standing to stretch for a moment mid-meal.
+- Tune into how your jaw and shoulders feel while chewing.
+- If you are multitasking, see if you can focus on one thing.
+- Explore how different meal speeds feel in your body.
+- Notice which meals lead to long-lasting energy.
+- Notice which meals leave you hungry again quickly.
+- Reflect on whether protein, fibre and fats were present.
+- Consider what you might add rather than what you would remove.
+- After a meal, ask if you feel alert, sleepy or neutral.
+- Observe whether some foods affect your sleep.
+- Gently track how late meals influence your digestion.
+- Notice if caffeine changes your hunger or fullness signals.
+- Make space for comfort foods without labelling them.
+- After eating a comfort meal, observe comfort in the body.
+- Ask what else might support you emotionally besides food.
+- Keep a short list of non-food comforts on your phone.
+- Reflect on the company you keep during meals.
