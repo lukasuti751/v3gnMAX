@@ -1358,3 +1358,71 @@ def cmd_export_hashes(args: argparse.Namespace) -> int:
         print("Written to", args.file)
     else:
         print(j)
+    return 0
+
+def cmd_config(args: argparse.Namespace) -> int:
+    cfg = {
+        "app": APP_NAME,
+        "meal_count": len(MEALS),
+        "path_tag_count": len(PATH_TAGS),
+        "tip_count": len(TIPS),
+        "meal_types": "1=breakfast, 2=lunch, 3=dinner, 4=snack",
+        "contract_note": "Veg3n uses logMeal(mealHash, pathTag, mealType). Hash off-chain.",
+    }
+    print(json.dumps(cfg, indent=2))
+    return 0
+
+def cmd_constants(args: argparse.Namespace) -> int:
+    c = {
+        "V3G_BPS_BASE": 10000,
+        "V3G_MAX_MEALS": 3200,
+        "V3G_MAX_PATHS": 110,
+        "V3G_MAX_TIPS": 450,
+        "V3G_MAX_BATCH_MEALS": 42,
+        "V3G_POINTS_SCALE": "1e18",
+        "V3G_MEAL_BREAKFAST": 1,
+        "V3G_MEAL_LUNCH": 2,
+        "V3G_MEAL_DINNER": 3,
+        "V3G_MEAL_SNACK": 4,
+    }
+    print(json.dumps(c, indent=2))
+    return 0
+
+def cmd_stats(args: argparse.Namespace) -> int:
+    by_type = {}
+    for m in MEALS:
+        k = m["meal_type"]
+        by_type[k] = by_type.get(k, 0) + 1
+    by_tag = {}
+    for m in MEALS:
+        t = m["path_tag"]
+        by_tag[t] = by_tag.get(t, 0) + 1
+    print("Meals:", len(MEALS))
+    print("Path tags:", len(PATH_TAGS))
+    print("Tips:", len(TIPS))
+    print("By meal type:", json.dumps(by_type, indent=2))
+    print("By path tag:", json.dumps(by_tag, indent=2))
+    return 0
+
+def cmd_suggest(args: argparse.Namespace) -> int:
+    keyword = (getattr(args, "keyword_opt", None) or getattr(args, "keyword", None) or "").strip()
+    if not keyword:
+        print("Provide a keyword (e.g. suggest breakfast)", file=sys.stderr)
+        return 1
+    results = suggest(keyword)
+    if not results:
+        print("No meals found for that keyword.", file=sys.stderr)
+        return 1
+    for m in results:
+        print(f"{m['name']}\ttype={m['meal_type']}\tpath_tag={m['path_tag']}")
+    return 0
+
+def cmd_help(args: argparse.Namespace) -> int:
+    print(HELP_TEXT.strip())
+    return 0
+
+def cmd_meals_by_type(args: argparse.Namespace) -> int:
+    t = getattr(args, "type", None)
+    if t is None or t < 1 or t > 4:
+        print("Provide --type 1, 2, 3 or 4", file=sys.stderr)
+        return 1
