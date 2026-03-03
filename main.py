@@ -1562,3 +1562,66 @@ def main() -> int:
     sub.add_parser("list-tips", help="List healthy eating tips").set_defaults(func=cmd_list_tips)
 
     hash_p = sub.add_parser("hash", help="Keccak256 hash of text")
+    hash_p.add_argument("--text", type=str, required=True, help="Text to hash")
+    hash_p.set_defaults(func=cmd_hash)
+
+    hb_p = sub.add_parser("hash-batch", help="Hash multiple meals/tags")
+    hb_p.add_argument("--meals", type=str, help="Comma-separated meal descriptions")
+    hb_p.add_argument("--tags", type=str, help="Comma-separated path tags")
+    hb_p.set_defaults(func=cmd_hash_batch)
+
+    exp_p = sub.add_parser("export-hashes", help="Export mealHash, pathTag for logMeal")
+    exp_p.add_argument("--meal", type=str, required=True, help="Meal description")
+    exp_p.add_argument("--tag", type=str, required=True, help="Path tag string")
+    exp_p.add_argument("--type", type=int, default=1, help="Meal type 1-4 (default 1)")
+    exp_p.add_argument("--file", type=str, help="Write JSON to file")
+    exp_p.set_defaults(func=cmd_export_hashes)
+
+    suggest_p = sub.add_parser("suggest", help="Suggest meals for a keyword")
+    suggest_p.add_argument("keyword", type=str, nargs="?", default="")
+    suggest_p.add_argument("--keyword", type=str, dest="keyword_opt")
+    suggest_p.set_defaults(func=cmd_suggest)
+
+    sub.add_parser("help", help="Show full help").set_defaults(func=cmd_help)
+
+    mbt_p = sub.add_parser("meals-by-type", help="List meals by type (1-4)")
+    mbt_p.add_argument("--type", type=int, required=True, help="1=breakfast, 2=lunch, 3=dinner, 4=snack")
+    mbt_p.set_defaults(func=cmd_meals_by_type)
+
+    mbtag_p = sub.add_parser("meals-by-tag", help="List meals by path tag")
+    mbtag_p.add_argument("--tag", type=str, required=True, help="Path tag id")
+    mbtag_p.set_defaults(func=cmd_meals_by_tag)
+
+    sub.add_parser("examples", help="Show example log entries").set_defaults(func=cmd_examples)
+    sub.add_parser("reference", help="Show Veg3n contract reference").set_defaults(func=cmd_reference)
+    sub.add_parser("usage", help="Show usage examples").set_defaults(func=cmd_usage)
+
+    rmeal_p = sub.add_parser("random-meal", help="Pick a random meal (optional --type, --path-tag)")
+    rmeal_p.add_argument("--type", type=int, help="Meal type 1-4")
+    rmeal_p.add_argument("--path-tag", type=str, dest="path_tag", help="Filter by path tag")
+    rmeal_p.set_defaults(func=cmd_random_meal)
+
+    wp_p = sub.add_parser("weekly-plan", help="Generate a weekly meal plan (--days 1-14, optional --seed)")
+    wp_p.add_argument("--days", type=int, default=7, help="Number of days (default 7)")
+    wp_p.add_argument("--seed", type=int, help="Random seed for reproducibility")
+    wp_p.set_defaults(func=cmd_weekly_plan)
+
+    sub.add_parser("playbook", help="Print HealthyPath4Life daily practice playbook").set_defaults(func=cmd_playbook)
+    sub.add_parser("kitchen-tips", help="Print kitchen flow and environment tips").set_defaults(func=cmd_kitchen_tips)
+    sub.add_parser("reflection", help="Print a random mindful eating reflection").set_defaults(func=cmd_reflection)
+    sub.add_parser("version", help="Print v3gnMAX version").set_defaults(func=cmd_version)
+
+    sub.add_parser("config", help="Show app config").set_defaults(func=cmd_config)
+    sub.add_parser("constants", help="Show Veg3n constant reference").set_defaults(func=cmd_constants)
+    sub.add_parser("stats", help="Meal and path stats").set_defaults(func=cmd_stats)
+    sub.add_parser("demo", help="Run a short demo").set_defaults(func=cmd_demo)
+    sub.add_parser("interactive", help="Interactive REPL").set_defaults(func=cmd_interactive)
+
+    args = p.parse_args()
+    if not args.command:
+        p.print_help()
+        return 0
+    return args.func(args)
+
+if __name__ == "__main__":
+    sys.exit(main())
